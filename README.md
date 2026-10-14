@@ -53,9 +53,44 @@
 
 ## 🏆 GitHub Trophies
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Manthanhk&theme=onestar&no-frame=true&margin-w=10" alt="GitHub Trophies" />
-</p>
+
+name: Generate GitHub Trophies
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  trophies:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate Trophy SVG
+        uses: soulteary/github-profile-trophy-action@v1.0.0
+        with:
+          options: "username=Manthanhk&theme=onedark&no-frame=true&no-bg=true&column=6"
+          path: trophy.svg
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Commit Trophy SVG
+        run: |
+          mkdir -p profile
+          cp trophy.svg profile/trophy.svg
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/trophy.svg
+          git diff --cached --quiet || git commit -m "Update GitHub trophies"
+          git push
+
 
 ---
 
