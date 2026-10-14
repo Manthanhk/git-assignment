@@ -51,22 +51,10 @@
 
 ---
 
-### 🏆 GitHub Trophies
-
-<p align="center">
-  <img
-    src="https://github-profile-trophy.vercel.app/?username=Manthanhk&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=1"
-    alt="GitHub Trophies"
-  />
-</p>
 ## 🏆 GitHub Trophies
 
 <p align="center">
-  <img
-    src="https://github-profile-trophy.vercel.app/?username=Manthanhk&theme=onestar&no-frame=true&margin-w=10"
-    alt="GitHub Trophies"
-    width="100%"
-  />
+  <img src="https://github-profile-trophy.vercel.app/?username=Manthanhk&theme=onestar&no-frame=true&margin-w=10" alt="GitHub Trophies" />
 </p>
 
 ---
