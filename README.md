@@ -80,6 +80,10 @@
 
 ```html
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Manthanhk&theme=github-compact&hide_border=true&area=true" alt="Contribution Graph" width="100%">
+  <img
+    src="https://readme-stats-theta-sepia.vercel.app/api/activity-graph?username=Manthanhk&theme=matrix&days=365"
+    alt="Manthanhk GitHub Contribution Graph"
+    width="100%"
+  />
 </p>
 ```
