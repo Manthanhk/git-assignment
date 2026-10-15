@@ -1,5 +1,3 @@
-# Hi 👋, I'm Manthan
-
 <h1 align="center">Hi 👋, I'm Manthan</h1>
 <h3 align="center">A passionate developer building things that (hopefully) work</h3>
 
