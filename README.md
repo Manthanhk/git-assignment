@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Manthan</h1>
+ <h1 align="center">Hi 👋, I'm Manthan</h1>
 <h3 align="center">A passionate developer building things that (hopefully) work</h3>
 
 <p align="center">
@@ -35,12 +35,12 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Manthanhk&show_icons=true&theme=chartreuse-dark&bg_color=080D0D&title_color=00E676&icon_color=00A86B&text_color=A7B5B2&border_color=1A2928&hide_border=false" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Manthanhk&layout=compact&theme=chartreuse-dark&bg_color=080D0D&title_color=00E676&text_color=A7B5B2&border_color=1A2928&hide_border=false" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Manthanhk&show_icons=true&bg_color=0B1210&title_color=00E676&icon_color=00A86B&text_color=A7B5B2&border_color=20332C&hide_border=false" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Manthanhk&layout=compact&bg_color=0B1210&title_color=00E676&text_color=A7B5B2&border_color=20332C&hide_border=false" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Manthanhk&background=080D0D&ring=00E676&fire=00A86B&currStreakLabel=00E676&sideLabels=A7B5B2&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=A7B5B2&border=1A2928" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Manthanhk&background=0B1210&ring=00E676&fire=00A86B&currStreakLabel=00E676&sideLabels=A7B5B2&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=A7B5B2&border=20332C" />
 </p>
 
 ---
@@ -51,19 +51,19 @@
 
 <p align="center">
   <a href="https://linkedin.com/in/yourusername" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0B1513?style=for-the-badge&logo=linkedin&logoColor=00E676" />
+    <img src="https://img.shields.io/badge/LinkedIn-101D18?style=for-the-badge&logo=linkedin&logoColor=00E676" />
   </a>
   <a href="https://twitter.com/yourusername" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-0B1513?style=for-the-badge&logo=x&logoColor=00E676" />
+    <img src="https://img.shields.io/badge/Twitter-101D18?style=for-the-badge&logo=x&logoColor=00E676" />
   </a>
   <a href="mailto:your.email@example.com">
-    <img src="https://img.shields.io/badge/Email-0B1513?style=for-the-badge&logo=gmail&logoColor=00E676" />
+    <img src="https://img.shields.io/badge/Email-101D18?style=for-the-badge&logo=gmail&logoColor=00E676" />
   </a>
   <a href="https://yourportfolio.com" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-0B1513?style=for-the-badge&logo=vercel&logoColor=00E676" />
+    <img src="https://img.shields.io/badge/Portfolio-101D18?style=for-the-badge&logo=vercel&logoColor=00E676" />
   </a>
 </p>
 
 ---
 
-<p align="center"><i>⭐️ From <a href="https://github.com/Manthanhk" style="color:#00E676;">Manthanhk</a> — thanks for stopping by!</i></p>
+<p align="center"><i>⭐️ From <a href="https://github.com/Manthanhk">Manthanhk</a> — thanks for stopping by!</i></p>
