@@ -67,13 +67,6 @@
 ---
 
 
-html
-<p align="center">
-  <img
-    src="https://readme-stats-theta-sepia.vercel.app/api/activity-graph?username=Manthanhk&theme=matrix&days=365"
-    alt="Manthanhk GitHub Contribution Graph"
-    width="100%"
-  />
-</p>
+
 
 <p align="center"><i>⭐️ From <a href="https://github.com/Manthanhk">Manthanhk</a> — thanks for stopping by!</i></p>
