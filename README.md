@@ -7,12 +7,6 @@
   </a>
 </p>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Manthanhk&label=Profile%20Views&color=2E9EF7&style=flat" alt="profile views" />
-  <a href="https://github.com/Manthanhk?tab=followers">
-    <img src="https://img.shields.io/github/followers/Manthanhk?label=Followers&style=social" alt="followers" />
-  </a>
-</p>
 
 ---
 
@@ -29,19 +23,6 @@
 
 <div align="center">
 
-# 🟢 MAN THAN HK
-
-### root@manthan:~# ./start.sh
-
-Learning Cybersecurity | Linux | Java | Python
-
-<img src="./profile/hacker-terminal.svg"
-     alt="Neon green hacker-style terminal"
-     width="700" />
-
-### LEARN • BUILD • SECURE
-
-</div>
 
 ---
 
