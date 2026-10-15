@@ -66,6 +66,14 @@ Learning Cybersecurity | Linux | Java | Python
 
 ---
 
+<br/><br/>
+
+<img
+  width="100%"
+  src="https://raw.githubusercontent.com/Manthanhk/Manthanhk/output/github-snake.svg"
+  alt="Contribution snake"
+/>
+
 ---
 
 ### 🌐 Connect With Me
