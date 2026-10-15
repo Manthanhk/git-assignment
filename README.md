@@ -76,3 +76,14 @@
     alt="Manthanhk GitHub Contribution Activity Graph"
   />
 </p>
+
+
+```html
+<p align="center">
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Manthanhk&bg_color=061018&color=c9d1d9&line=00ff88&point=00ff88&area=false&hide_border=true&custom_title=CONTRIBUTION%20ACTIVITY&days=31&height=300"
+    width="100%"
+    alt="GitHub Contribution Activity Graph"
+  />
+</p>
+```
