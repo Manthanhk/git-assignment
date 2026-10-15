@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Music | Portfolio</title>
+
+<style>
+:root {
+  --bg: #080D0D;
+  --card: #0B1513;
+  --green: #00E676;
+  --emerald: #00A86B;
+  --muted: #1A2928;
+  --text: #FFFFFF;
+  --secondary: #A7B5B2;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 35px 16px;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at top, #10251d, var(--bg) 65%);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
+
+.music-player {
+  max-width: 520px;
+  margin: 30px auto;
+  padding: 28px;
+  background: var(--card);
+  border: 1px solid var(--emerald);
+  border-radius: 22px;
+  box-shadow: 0 0 35px #00E67612;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+h1 { font-size: 26px; margin: 0; }
+.subtitle, .artist { color: var(--secondary); }
+.status { color: var(--green); font-size: 12px; text-align: right; max-width: 55%; word-break: break-word; }
+
+.album-art {
+  margin: 25px 0;
+  height: 180px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #073d2c, #101a26, #006847);
+  display: grid;
+  place-items: center;
+  font-size: 65px;
+}
+
+#song-title { font-size: 22px; margin-bottom: 5px; }
+.artist { margin-top: 0; font-size: 14px; }
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin: 25px 0;
+}
+
+button { cursor: pointer; border: 0; }
+
+.control {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: var(--muted);
+  color: var(--text);
+  font-size: 18px;
+}
+
+.play {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--green);
+  color: #06110B;
+  font-size: 23px;
+}
+
+input[type="range"] { width: 100%; accent-color: var(--green); cursor: pointer; }
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  color: var(--secondary);
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.track-list {
+  margin-top: 25px;
+  border-top: 1px solid var(--muted);
+  padding-top: 12px;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px;
+  margin: 5px 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--text);
+  width: 100%;
+  text-align: left;
+}
+
+.track.active { background: #003d2c; }
+.track-number { color: var(--green); }
+.track-name { flex: 1; }
+.track small { display: block; color: var(--secondary); margin-top: 4px; }
+
+.spotify {
+  display: block;
+  margin-top: 25px;
+  padding: 15px;
+  border: 1px solid var(--emerald);
+  border-radius: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--green);
+  font-weight: bold;
+}
+
+.spotify:hover { background: #003d2c; }
+
+.footer { text-align: center; color: var(--secondary); font-size: 12px; margin-top: 22px; }
+
+button:hover { filter: brightness(1.15); }
+
+@media (max-width: 400px) {
+  .music-player { padding: 20px; }
+  .header { align-items: flex-start; }
+}
+</style>
+</head>
+
+<body>
+
+<main class="music-player">
+
+  <div class="header">
+    <div>
+      <h1>♫ My Music</h1>
+      <p class="subtitle">Good vibes. Better days.</p>
+    </div>
+    <span class="status" id="status">● Ready</span>
+  </div>
+
+  <div class="album-art">♫</div>
+
+  <p id="song-title">Song 1</p>
+  <p class="artist">My personal playlist</p>
+
+  <!-- The audio element: the script below sets its source -->
+  <audio id="audio" preload="auto"></audio>
+
+  <div class="controls">
+    <button class="control" id="prev-btn" aria-label="Previous song">⏮</button>
+    <button class="play" id="play-btn" aria-label="Play">▶</button>
+    <button class="control" id="next-btn" aria-label="Next song">⏭</button>
+  </div>
+
+  <input id="progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Song progress">
+
+  <div class="timeline">
+    <span id="current-time">0:00</span>
+    <span id="duration">0:00</span>
+  </div>
+
+  <div class="track-list">
+    <button class="track active" data-index="0">
+      <span class="track-number">01</span>
+      <span class="track-name">Song 1<small>assets/song1.mp3</small></span>
+      <span>♫</span>
+    </button>
+
+    <button class="track" data-index="1">
+      <span class="track-number">02</span>
+      <span class="track-name">Song 2<small>assets/song2.mp3</small></span>
+      <span>♫</span>
+    </button>
+  </div>
+
+  <a class="spotify"
+     href="https://open.spotify.com/playlist/7r0jDjqagpAspWvPtgdk1j"
+     target="_blank" rel="noopener noreferrer">
+    🟢 Open My Spotify Playlist ↗
+  </a>
+
+  <p class="footer">Made with ♥ by Manthan</p>
+
+</main>
+
+<script>
+// ✏️ Songs: each one lists the file path(s) to try, in order.
+// Change "title" to the real song name if you want.
+const songs = [
+  { title: "Song 1", files: ["assets/song1.mp3", "assets/song1.mpeg"] },
+  { title: "Song 2", files: ["assets/song2.mp3", "assets/song2.mpeg"] }
+];
+
+const audio       = document.getElementById("audio");
+const playBtn     = document.getElementById("play-btn");
+const prevBtn     = document.getElementById("prev-btn");
+const nextBtn     = document.getElementById("next-btn");
+const titleEl     = document.getElementById("song-title");
+const progress    = document.getElementById("progress");
+const currentEl   = document.getElementById("current-time");
+const durationEl  = document.getElementById("duration");
+const statusText  = document.getElementById("status");
+const trackButtons = document.querySelectorAll(".track");
+
+let currentSong = 0;
+let fileTry = 0;
+
+function formatTime(seconds) {
+  if (!Number.isFinite(seconds)) return "0:00";
+  const m = Math.floor(seconds / 60);
+  const s = Math.floor(seconds % 60);
+  return m + ":" + String(s).padStart(2, "0");
+}
+
+function setSource() {
+  audio.src = songs[currentSong].files[fileTry];
+  audio.load();
+}
+
+function loadSong(index, autoplay) {
+  currentSong = (index + songs.length) % songs.length;
+  fileTry = 0;
+  titleEl.textContent = songs[currentSong].title;
+  progress.value = 0;
+  currentEl.textContent = "0:00";
+  durationEl.textContent = "0:00";
+  trackButtons.forEach((b, i) => b.classList.toggle("active", i === currentSong));
+  setSource();
+  if (autoplay) {
+    audio.play().catch(() => {});
+  } else {
+    statusText.textContent = "● Ready";
+    playBtn.textContent = "▶";
+  }
+}
+
+playBtn.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play().catch(() => {});
+  } else {
+    audio.pause();
+  }
+});
+
+nextBtn.addEventListener("click", () => loadSong(currentSong + 1, true));
+
+prevBtn.addEventListener("click", () => {
+  if (audio.currentTime > 3) {
+    audio.currentTime = 0;
+  } else {
+    loadSong(currentSong - 1, true);
+  }
+});
+
+trackButtons.forEach(btn => {
+  btn.addEventListener("click", () => loadSong(Number(btn.dataset.index), true));
+});
+
+audio.addEventListener("play", () => {
+  playBtn.textContent = "Ⅱ";
+  statusText.textContent = "● Now Playing";
+});
+
+audio.addEventListener("pause", () => {
+  playBtn.textContent = "▶";
+  if (!audio.ended) statusText.textContent = "● Paused";
+});
+
+audio.addEventListener("loadedmetadata", () => {
+  durationEl.textContent = formatTime(audio.duration);
+});
+
+audio.addEventListener("timeupdate", () => {
+  currentEl.textContent = formatTime(audio.currentTime);
+  if (Number.isFinite(audio.duration) && audio.duration > 0) {
+    progress.value = (audio.currentTime / audio.duration) * 100;
+  }
+});
+
+progress.addEventListener("input", () => {
+  if (Number.isFinite(audio.duration)) {
+    audio.currentTime = (progress.value / 100) * audio.duration;
+  }
+});
+
+// When a song ends, play the next one (Song 2 → back to Song 1)
+audio.addEventListener("ended", () => loadSong(currentSong + 1, true));
+
+// If a file fails, try the next file name; if none work, show the reason
+audio.addEventListener("error", () => {
+  if (fileTry < songs[currentSong].files.length - 1) {
+    fileTry++;
+    setSource();
+    return;
+  }
+  const reasons = {
+    1: "loading was stopped",
+    2: "network error",
+    3: "file is damaged or not real audio",
+    4: "file not found or format not supported"
+  };
+  const code = audio.error ? audio.error.code : 0;
+  statusText.textContent = "● " + (reasons[code] || "error") + " — " + songs[currentSong].files[0];
+});
+
+loadSong(0, false);
+</script>
+
+</body>
+</html>
