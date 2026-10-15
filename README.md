@@ -78,7 +78,7 @@
 </p>
 
 
-```html
+html
 <p align="center">
   <img
     src="https://readme-stats-theta-sepia.vercel.app/api/activity-graph?username=Manthanhk&theme=matrix&days=365"
@@ -86,4 +86,4 @@
     width="100%"
   />
 </p>
-```
+
