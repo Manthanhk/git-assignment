@@ -67,3 +67,12 @@
 ---
 
 <p align="center"><i>⭐️ From <a href="https://github.com/Manthanhk">Manthanhk</a> — thanks for stopping by!</i></p>
+
+
+<p align="center">
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Manthanhk&bg_color=061018&color=c9d1d9&line=00ff88&point=00ff88&area=false&hide_border=true&custom_title=CONTRIBUTION%20ACTIVITY&days=31&height=300"
+    width="100%"
+    alt="Manthanhk GitHub Contribution Activity Graph"
+  />
+</p>
