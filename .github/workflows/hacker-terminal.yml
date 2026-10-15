@@ -1,0 +1,51 @@
+name: Generate Hacker Terminal
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "profile/hacker-terminal.svg"
+
+permissions:
+  contents: write
+
+jobs:
+  generate-terminal:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate terminal SVG
+        run: |
+          mkdir -p profile
+
+          cat > profile/hacker-terminal.svg <<'SVG'
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="700" height="320" viewBox="0 0 700 320">
+            <rect width="700" height="320" rx="14" fill="#080b08"/>
+            <rect x="1" y="1" width="698" height="318" rx="14"
+                  fill="none" stroke="#39ff14" stroke-opacity="0.6"/>
+            <rect width="700" height="42" rx="14" fill="#142014"/>
+            <rect y="28" width="700" height="14" fill="#142014"/>
+            <circle cx="22" cy="21" r="6" fill="#ff5f56"/>
+            <circle cx="42" cy="21" r="6" fill="#ffbd2e"/>
+            <circle cx="62" cy="21" r="6" fill="#27c93f"/>
+            <text x="350" y="26" fill="#b8cdb8" font-family="monospace"
+                  font-size="13" text-anchor="middle">root@manthan: ~</text>
+            <g font-family="monospace" font-size="15">
+              <text x="25" y="75" fill="#39ff14">manthan@kali:~$ whoami</text>
+              <text x="25" y="101" fill="#d5e8d5">BCA Cybersecurity Student</text>
+              <text x="25" y="139" fill="#39ff14">manthan@kali:~$ cat mission.txt</text>
+              <text x="25" y="165" fill="#d5e8d5">Learn. Explore. Secure.</text>
+              <text x="25" y="203" fill="#39ff14">manthan@kali:~$ system_status</text>
+              <text x="25" y="229" fill="#d5e8d5">[ONLINE] Learning mode enabled</text>
+              <text x="25" y="255" fill="#d5e8d5">[ACTIVE] Building new skills</text>
+              <text x="25" y="281" fill="#d5e8d5">[NEXT] Cybersecurity projects</text>
+              <text x="25" y="305" fill="#39ff14">ACCESS GRANTED_</text>
+            </g>
+          </svg>
+          SVG

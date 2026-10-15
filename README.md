@@ -27,6 +27,24 @@
 
 ---
 
+<div align="center">
+
+# 🟢 MAN THAN HK
+
+### root@manthan:~# ./start.sh
+
+Learning Cybersecurity | Linux | Java | Python
+
+<img src="./profile/hacker-terminal.svg"
+     alt="Neon green hacker-style terminal"
+     width="700" />
+
+### LEARN • BUILD • SECURE
+
+</div>
+
+---
+
 ### 🛠️ Languages & Tools
 
 <p align="center">
